@@ -1,9 +1,8 @@
 import express from 'express'
+import { getProducts } from '@/controllers/productController.js'
 
 const router = express.Router()
 
-router.get('/', (req, res, next) => {
-  res.status(200).json({ message: 'success' })
-})
+router.get('/', getProducts)
 
 export default router
