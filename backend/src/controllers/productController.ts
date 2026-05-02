@@ -10,7 +10,7 @@ export const getProducts = async (req: Request, res: Response) => {
       data: products,
     });
   } catch (error) {
-    console.error('Błąd pobierania produktów:', error);
-    res.status(500).json({ success: false, message: 'Wewnętrzny błąd serwera' });
+    console.error('Error fetching products:', error);
+    res.status(500).json({ success: false, message: 'Internal server error' });
   }
 };

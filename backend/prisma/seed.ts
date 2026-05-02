@@ -11,12 +11,12 @@ async function main() {
 
   await prisma.category.create({
     data: {
-      name: 'Elektronika',
+      name: 'Electronics',
       products: {
         create: [
-          { name: 'Klawiatura Keychron K2', stockLevel: 15 },
-          { name: 'Myszka Logitech MX Master 3', stockLevel: 3 },
-          { name: 'Monitor Dell 27"', stockLevel: 0 },
+          { name: 'Keychron K2 Keyboard', stockLevel: 15 },
+          { name: 'Logitech MX Master 3 Mouse', stockLevel: 3 },
+          { name: 'Dell 27" Monitor', stockLevel: 0 },
         ],
       },
     },
@@ -24,11 +24,11 @@ async function main() {
 
   await prisma.category.create({
     data: {
-      name: 'Meble Biurowe',
+      name: 'Office Furniture',
       products: {
         create: [
-          { name: 'Fotel Ergonomiczny Herman Miller', stockLevel: 8 },
-          { name: 'Biurko Elektryczne', stockLevel: 12 },
+          { name: 'Herman Miller Ergonomic Chair', stockLevel: 8 },
+          { name: 'Electric Desk', stockLevel: 12 },
         ],
       },
     },
