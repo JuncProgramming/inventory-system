@@ -10,4 +10,6 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use('/api/products', productRoutes)
 
-app.listen(3000, () => console.log('Server listening on port 3000'))
+app.listen(3000, () =>
+  console.log('Server listening on http://localhost:3000')
+)
